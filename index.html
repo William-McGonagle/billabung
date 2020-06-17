@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Billabung</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="script.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <h2 class="logo">Billabung</h2>
+    <input id="leftInput" type="file" class="uploadLeft" value="">
+    <div class="uploadImageLeft">
+      Upload Face
+    </div>
+    <input id="rightInput" type="file" class="uploadRight" value="">
+    <div class="uploadImageRight">
+      Upload Face
+    </div>
+    <div class="result">
+      <h2 id="resultText"></h2>
+      <h1 id="resultScore"></h1>
+      <button onclick="closeResult()" class="close" type="button" name="button">close</button>
+    </div>
+    <button id="startButton" onclick="clickButton()" class="matchButton" type="button" name="button">Do We Match?</button>
+  </body>
+</html>

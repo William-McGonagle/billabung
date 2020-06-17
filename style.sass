@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap')
+
+*
+  font-family: 'Ubuntu', sans-serif
+  outline: none
+
+.logo
+  position: fixed
+  left: 30vw
+  width: 40vw
+  text-align: center
+  top: 10vh
+  height: 5vh
+  font-size: 5vh
+
+.matchButton
+  position: fixed
+  left: 20vw
+  bottom: 20vh
+  width: 60vw
+  background: #f56527
+  border: 2px solid #e04f10
+  border-radius: 5px
+  color: white
+  font-size: 3vh
+  padding: 4vh
+  max-height: 15vh
+
+  &:hover
+    cursor: pointer
+    background: #ff6d2e
+
+  &:active
+    background: #de591f
+
+.loading
+  animation: move 2s linear infinite
+
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background: linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent)
+    z-index: 1
+    background-size: 50px 50px
+    animation: move 2s linear infinite
+    overflow: hidden
+
+.uploadImageLeft
+  position: fixed
+  left: 20vw
+  width: 29vw
+  background: #ddd
+  border-radius: 5px
+  top: 25vh
+  bottom: 35vh
+  border: 2px dashed #aaa
+  text-align: center
+  font-size: 3vh
+  padding-top: 18vh
+  color: #aaa
+
+.uploadLeft
+  position: fixed
+  left: 20vw
+  width: 29vw
+  top: 25vh
+  bottom: 35vh
+  z-index: 5
+  opacity: 0
+
+.uploadImageRight
+  position: fixed
+  right: 20vw
+  width: 29vw
+  background: #ddd
+  border-radius: 5px
+  top: 25vh
+  bottom: 35vh
+  border: 2px dashed #aaa
+  text-align: center
+  font-size: 3vh
+  padding-top: 18vh
+  color: #aaa
+
+.uploadRight
+  position: fixed
+  right: 20vw
+  width: 29vw
+  top: 25vh
+  bottom: 35vh
+  z-index: 5
+  opacity: 0
+
+.result
+  position: fixed
+  left: 20vw
+  width: 60vw
+  border-radius: 5px
+  border: 2px solid #aaa
+  background: #eee
+  top: 10vh
+  height: 80vh
+  z-index: 15
+
+  h2
+    text-align: center
+    padding-top: 5vh
+    font-size: 5vh
+    color: #555
+
+  h1
+    text-align: center
+    padding-top: 0vh
+    font-size: 10vh
+    color: #333
+
+  .close
+    position: absolute
+    top: 10px
+    right: 10px
+    border: none
+    background: inherit
+
+    &:hover
+      cursor: pointer
+      text-decoration: underline
+
+@keyframes move
+  0%
+    background-position: 0 0
+  100%
+    background-position: 50px 50px
